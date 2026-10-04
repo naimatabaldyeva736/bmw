@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW RENT — Кыргызстандагы Премиум Автоунаа Арендасы</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATOR / NAVBAR -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-brands fa-supple"></i> BMW <span>RENT</span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Башкы бет</a>
+                <a href="#catalog" class="nav-link">Каталог</a>
+                <a href="#services" class="nav-link">Кызматтар</a>
+                <a href="#payment" class="nav-link">Төлөм</a>
+                <a href="#contact" class="nav-link">Байланыш</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/996555123456" target="_blank" class="btn-whatsapp-top">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <button class="mobile-menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-bolt"></i> Жаңы 2026 Коллекциясы
+            </div>
+            <h1>Кыргызстандагы Премиум <br><span>BMW Арендасы</span></h1>
+            <p>Жогорку деңгээлдеги ыңгайлуулук, спорттук мүнөз жана теңдешсиз кумар. Бишкек, Ош жана башка шаарлар үчүн мыкты автоунаалар.</p>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Автоунаа тандоо</a>
+                <a href="#search-section" class="btn btn-outline">Ыкчам издөө</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED 2026 MODEL HIGHLIGHT -->
+    <section class="featured-model-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Жылдын Премьерасы</h2>
+                <p>ЭКСКЛЮЗИВТҮҮ СУПЕР КАР</p>
+            </div>
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80" alt="BMW iX3 2026">
+                    <span class="badge-new">Жаңы 2026</span>
+                </div>
+                <div class="featured-info">
+                    <h3>BMW iX3 (2026 Model)</h3>
+                    <p>Толук электрдик заманбап кроссовер. Футуристтик дизайн, инновациялык салон, бир заряд менен 650 км жол жана жогорку ылдамдык.</p>
+                    <ul class="specs-grid">
+                        <li><i class="fa-solid fa-gauge-high"></i> Электр / 500 а.к.</li>
+                        <li><i class="fa-solid fa-gear"></i> Автомат (AWD)</li>
+                        <li><i class="fa-solid fa-user-group"></i> 5 орундуу</li>
+                        <li><i class="fa-solid fa-bolt"></i> 0-100 км/с: 4.6 сек</li>
+                    </ul>
+                    <div class="pricing-row">
+                        <div class="price-box">
+                            <span>1 күнгө</span>
+                            <strong>$350</strong>
+                        </div>
+                        <div class="price-box">
+                            <span>1 айга</span>
+                            <strong>$8,000</strong>
+                        </div>
+                        <div class="price-box">
+                            <span>6 айга</span>
+                            <strong>$42,000</strong>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%20iX3%202026%20автоунаасын%20арендага%20алуу%20боюнча%20билдирүү%20жиберип%20жатам." target="_blank" class="btn btn-primary btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Арендага алуу (WhatsApp)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK SEARCH WIDGET -->
+    <section id="search-section" class="search-widget-section">
+        <div class="container">
+            <div class="search-box-card">
+                <h3><i class="fa-solid fa-magnifying-glass"></i> Автоунаа издөө</h3>
+                <form id="searchForm" class="search-grid">
+                    <div class="form-group">
+                        <label for="searchCategory">Категория</label>
+                        <select id="searchCategory">
+                            <option value="all">Бардык категориялар</option>
+                            <option value="Business">Business</option>
+                            <option value="Comfort +">Comfort +</option>
+                            <option value="Comfort">Comfort</option>
+                            <option value="Econom">Econom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchModel">Модель же аты</label>
+                        <input type="text" id="searchModel" placeholder="Мисалы: M5, X5, 5 Series...">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchDuration">Аренда мөөнөтү</label>
+                        <select id="searchDuration">
+                            <option value="daily">1 күндүк</option>
+                            <option value="monthly">1 айлык</option>
+                            <option value="semiannual">6 айлык</option>
+                        </select>
+                    </div>
+                    <div class="form-group btn-holder">
+                        <button type="submit" class="btn btn-primary">Издөө</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <section id="catalog" class="catalog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Автоунаалар Каталогу</h2>
+                <p>Өзүңүзгө ылайыктуу класс жана модель тандаңыз</p>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Бардыгы</button>
+                <button class="filter-btn" data-filter="Business">Business</button>
+                <button class="filter-btn" data-filter="Comfort +">Comfort +</button>
+                <button class="filter-btn" data-filter="Comfort">Comfort</button>
+                <button class="filter-btn" data-filter="Econom">Econom</button>
+            </div>
+
+            <!-- CAR CARDS GRID -->
+            <div class="cars-grid" id="carsGrid">
+                
+                <!-- Car 1 -->
+                <div class="car-card" data-category="Business" data-model="BMW M5 Competition">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW M5 Competition">
+                        <span class="cat-tag">Business</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW M5 Competition</h3>
+                        <p class="car-year">Жылы: 2025 | 4.4L V8</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 5 орун</li>
+                            <li><i class="fa-solid fa-road"></i> 4WD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$300</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$7,500</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$39,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%20M5%20Competition%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card" data-category="Business" data-model="BMW X7 xDrive">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80" alt="BMW X7 xDrive">
+                        <span class="cat-tag">Business</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW X7 xDrive</h3>
+                        <p class="car-year">Жылы: 2025 | 3.0L Turbo</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 7 орун</li>
+                            <li><i class="fa-solid fa-road"></i> 4WD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$280</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$7,000</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$36,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%20X7%20xDrive%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card" data-category="Comfort +" data-model="BMW 5 Series">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80" alt="BMW 5 Series">
+                        <span class="cat-tag">Comfort +</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW 5 Series (G60)</h3>
+                        <p class="car-year">Жылы: 2024 | 2.0L TwinPower</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 5 орун</li>
+                            <li><i class="fa-solid fa-road"></i> RWD/AWD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$180</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$4,500</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$24,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%205%20Series%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card" data-category="Comfort +" data-model="BMW X5">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1541348263662-e052662afda3?auto=format&fit=crop&w=800&q=80" alt="BMW X5">
+                        <span class="cat-tag">Comfort +</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW X5 M Sport</h3>
+                        <p class="car-year">Жылы: 2024 | 3.0L Diesel</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 5 орун</li>
+                            <li><i class="fa-solid fa-road"></i> 4WD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$220</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$5,500</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$29,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%20X5%20M%20Sport%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card" data-category="Comfort" data-model="BMW 3 Series">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=800&q=80" alt="BMW 3 Series">
+                        <span class="cat-tag">Comfort</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW 3 Series (G20)</h3>
+                        <p class="car-year">Жылы: 2023 | 2.0L Petrol</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 5 орун</li>
+                            <li><i class="fa-solid fa-road"></i> RWD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$120</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$3,000</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$16,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%203%20Series%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card" data-category="Econom" data-model="BMW 1 Series">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1607853554027-2263d9199d75?auto=format&fit=crop&w=800&q=80" alt="BMW 1 Series">
+                        <span class="cat-tag">Econom</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW 1 Series Hatchback</h3>
+                        <p class="car-year">Жылы: 2022 | 1.5L TwinPower</p>
+                        <ul class="car-specs-mini">
+                            <li><i class="fa-solid fa-gear"></i> Автомат</li>
+                            <li><i class="fa-solid fa-user-group"></i> 5 орун</li>
+                            <li><i class="fa-solid fa-road"></i> FWD</li>
+                        </ul>
+                        <div class="car-tariffs">
+                            <div class="tariff-item"><span>1 күн:</span> <strong>$80</strong></div>
+                            <div class="tariff-item"><span>1 ай:</span> <strong>$2,000</strong></div>
+                            <div class="tariff-item"><span>6 ай:</span> <strong>$11,000</strong></div>
+                        </div>
+                        <a href="https://wa.me/996555123456?text=Саламатсызбы!%20BMW%201%20Series%20автоунаасын%20арендага%20алууну%20каалайм." target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Арендага алуу
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Биздин Кызматтар</h2>
+                <p>Эмне үчүн бизди тандашат?</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Техникалык жактан текшерилген</h3>
+                    <p>Бардык автоунаалар расмий сервис борборунда толук диагностикадан өткөн.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    <h3>Таза жана даяр машиналар</h3>
+                    <p>Ар бир аренда алдында салону химчисткадан өтүп, кемчиликсиз тазаланат.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Кыска мөөнөттүү аренда</h3>
+                    <p>Бир күнгө же фотосессияга зарыл учурда тез арада рәсимделет.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <h3>Узак мөөнөттүү аренда</h3>
+                    <p>Айлык жана жылдык келишимдерге атайын арзандатуулар каралган.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 Онлайн консультант</h3>
+                    <p>Жолдо кандайдыр бир суроо жаралса, күнү-түнү жардам берүүгө даярбыз.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-car-side"></i></div>
+                    <h3>Шаар ичинде жеткирүү</h3>
+                    <p>Сиз каалаган дарекке (аэропорт, үй же офис) автоунааны жеткирип беребиз.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>Коопсуз төлөм</h3>
+                    <p>Бардык эл аралык жана жергиликтүү төлөм системалары менен иштешебиз.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Жеке консультация</h3>
+                    <p>Сиздин стилиңизге жана бюджетиңизге жараша жеке менеджер жардам берет.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAYMENT SECTION -->
+    <section id="payment" class="payment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ыңгайлуу Төлөм Системалары</h2>
+                <p>Биз кабыл алган төлөм ыкмалары</p>
+            </div>
+            <div class="payment-grid">
+                <div class="pay-card">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <span>VISA</span>
+                </div>
+                <div class="pay-card">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="pay-card mbank">
+                    <strong>MBANK</strong>
+                </div>
+                <div class="pay-card elkart">
+                    <strong>Элкарт</strong>
+                </div>
+                <div class="pay-card">
+                    <strong>O!Деньги</strong>
+                </div>
+                <div class="pay-card">
+                    <strong>Balance</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Байланыш</h2>
+                <p>Биз менен байланышыңыз же офисибизге келиңиз</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Телефон номери</h4>
+                            <p>+996 (555) 123-456 <br>+996 (700) 123-456</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+996 555 123 456</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Офистин дареги</h4>
+                            <p>Бишкек шаары, Чынгыз Айтматов проспектиси, 100 / Ош ш., Ленин көчөсү 22</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Иштөө убактысы</h4>
+                            <p>Дүйшөмбү - Жекшемби: 09:00 – 21:00 (Онлайн 24/7)</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/996555123456?text=Саламатсызбы!%20Сиздер менен%20байланышкым%20келип%20жатат." target="_blank" class="btn btn-whatsapp-full">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp аркылуу жазуу
+                    </a>
+                </div>
+                <div class="map-container">
+                    <!-- Google Maps placeholder frame -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.824519967655!2d74.59868837643534!3d42.87353997115385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7d1653ff9d7%3A0x6b896944e27f0174!2z0JHQuNGI0LrQtdC6IEJpc2hrZWs!5e0!3m2!1sru!2skg!4v1700000000000!5m2!1sru!2skg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#home" class="logo">
+                        <i class="fa-brands fa-supple"></i> BMW <span>RENT</span>
+                    </a>
+                    <p>Кыргызстандагы эң алдыңкы премиум клаездеги BMW автоунааларын ижарага берүү компаниясы. Сапат, коопсуздук жана жогорку сервис.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Ыкчам Меню</h4>
+                    <ul>
+                        <li><a href="#home">Башкы бет</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#services">Кызматтар</a></li>
+                        <li><a href="#payment">Төлөм</a></li>
+                        <li><a href="#contact">Байланыш</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Байланыштар</h4>
+                    <p><i class="fa-solid fa-phone"></i> +996 555 123 456</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@bmwrent.kg</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BMW RENT Kyrgyzstan. Бардык укуктар корголгон.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ONLINE CONSULTANT CHAT -->
+    <div class="consultant-wrapper">
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <div class="agent-info">
+                    <span class="status-dot"></span>
+                    <div>
+                        <h4>Азамат (BMW Expert)</h4>
+                        <p>Онлайн</p>
+                    </div>
+                </div>
+                <button id="closeChat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg bot">
+                    Саламатсызбы! 😊 Сизге кайсы BMW модели же аренда шарты боюнча жардам бере алам?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Билдирүү жазыңыз...">
+                <button id="sendChat"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="consultant-btn" id="consultantBtn">
+            <i class="fa-solid fa-headset"></i>
+            <span class="notification-badge">1</span>
+        </button>
+    </div>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
